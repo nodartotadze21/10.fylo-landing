@@ -1,0 +1,365 @@
+@import "./config.scss";
+
+body {
+    
+    
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+#logo {
+    @extend %logo;
+}
+#header-text a {
+    text-decoration: none;
+    @extend %headerText;
+    padding: 5px;
+}
+main {
+    margin-top: 100px;
+}
+.top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+}
+.top-section-img {
+    max-width: 80%;
+}
+.top-section-text {
+    margin-top: 40px;
+    width: 80%;
+    text-align: center;
+}
+.top-section-text h1 {
+    @extend %heading1;
+}
+.top-section-text p {
+    @extend %bodyText;
+    margin-top: 24px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+    align-items: center;
+} 
+#top-mail-input {
+    width: 80%;
+    height: 40px;
+    border: 0.625px solid #07043B;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: 3.125px;
+}
+#get-started {
+    background: #2F65F8;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: 3.125px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    width: 80%;
+    height: 40px;
+}
+.middle-section {
+    margin-top: 90px;
+    padding: 12px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    background-color: #F8F8FE;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.middle-section-img2 {
+    max-width: 80%;  
+}
+.middle-section-text h2 {
+    margin-top: 87px;
+    @extend %heading2;
+}
+.middle-section-text p {
+    @extend %bodyText;
+    margin-top: 24px;
+}
+#fylo-works {
+    width: 130px;
+    margin: auto;
+    margin-top: 36px;
+    border-color: #3DA08F;  
+    border-width: 1px;
+    border-bottom-style: solid;
+}    
+#fylo-works a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3DA08F;
+    text-decoration: none;
+}
+.middle-section-last {
+    width: 70%;
+    background: white;
+    margin: auto;
+    margin-top: 40px;
+    padding: 16px;
+    box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+    border-radius: 3.93258px;
+}
+#middle-p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.384615px;
+    color: #07043B;
+}
+.middle-author {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 10px;
+}
+.author {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+}
+.author-name h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: 0.45px;
+    color: $darkBlue;
+}
+.author-name h5 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 12px;
+    letter-spacing: 0.3px;
+    color:  $darkBlue;
+}
+.bottom-section {
+    background: #575988;
+    text-align: center;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+.bottom-section h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.bottom-section p {
+    margin-top: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.bottom-section-text {
+    width: 50%;
+}
+.bottom-boxes {
+    width: 100%;
+}
+#form2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    width: 80%;
+}
+#bottom-mail-input {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    background-color: #FFFFFF;
+    width: 80%;
+    height: 32px;
+}
+#get-started-free {
+    background: #2F65F8;
+    box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+    border-radius: 1.47059px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+    width: 80%;
+    height: 32px;
+}
+footer {
+    background-color: $darkBlue;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    gap: 32px;
+}
+#logo2 {
+        @extend %logo;
+}
+#phone-email {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+    margin-top: 16px;
+}
+#phone {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#email {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#footer-text1 a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-block: 16px;
+}
+.socials {
+    align-self: center;
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        padding: 80px;
+    }
+    .top-section {
+        padding: 80px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    .top-section-text h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .top-section-text p {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: 0.53125px;
+    }
+    #form {
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+    }
+    #top-mail-input {
+        width: 320px;
+    }
+    #get-started {
+        width: 200px;
+    }
+    .middle-section {
+        padding: 80px;
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+    .middle-section h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .middle-section p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #fylo-works {
+        width: 166px;
+    }    
+    #fylo-works a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .bottom-section {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        gap: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .bottom-text {
+        width: 50%;
+    }
+    .bottom-boxes {
+        width: 50%;
+    }
+    .bottom-text h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .bottom-text p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+    }
+    footer {
+        padding: 80px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #get-started:hover {
+        cursor: pointer;
+        background-color: #6C9BFF;
+    }
+    #fylo-works a:hover {
+        cursor: pointer;
+        color: #71DFCC;
+    }
+    #get-started-free:hover {
+        cursor: pointer;
+        background: #6C9BFF;
+    }
+    #fb:hover, #twit:hover, #insta:hover {
+        cursor: pointer;
+        fill: red;
+
+    }
+
+
+}
